@@ -1,0 +1,22 @@
+{
+  "name": "nepal-codes-website",
+  "version": "1.0.0",
+  "description": "Website for Nepal Codes",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nepal-codes/nepal-codes-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nepal-codes/nepal-codes-website/issues"
+  },
+  "homepage": "https://github.com/nepal-codes/nepal-codes-website#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
