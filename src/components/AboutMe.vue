@@ -13,7 +13,7 @@
           style="transform: translate(5%, -5%)"
         />
         <base-heading class="info--text">
-          About Me
+          About Us
         </base-heading>
 
         <base-text class="mb-5">

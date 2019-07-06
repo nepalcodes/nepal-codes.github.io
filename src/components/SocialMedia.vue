@@ -32,8 +32,8 @@ export default {
         icon: 'mdi-twitter'
       },
       {
-        name: 'Instagram',
-        icon: 'mdi-instagram'
+        name: 'Github',
+        icon: 'mdi-github'
       },
       {
         name: 'Facebook',
