@@ -1,16 +1,29 @@
-# nepal-codes-website
-Website for Nepal Codes
+# Freelancer Theme for Vuetify
 
-This repository contains the project for running the nepal codes website!!
+## Project setup
+```
+yarn install
+```
 
-## Getting started
+### Compiles and hot-reloads for development
+```
+yarn run serve
+```
 
-### Prereqs:
-* Install Node/NPM
+### Compiles and minifies for production
+```
+yarn run build
+```
 
-### Running the app:
-To get started run these commands from the terminal:
-* `npm install`
-* `npm start`
+### Run your tests
+```
+yarn run test
+```
 
-You should see the website open on localhost:8080
+### Lints and fixes files
+```
+yarn run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
