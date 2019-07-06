@@ -1,22 +1,54 @@
 {
-  "name": "nepal-codes-website",
-  "version": "1.0.0",
-  "description": "Website for Nepal Codes",
-  "main": "index.js",
+  "name": "theme-freelancer",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "http-server"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --dest docs",
+    "lint": "vue-cli-service lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nepal-codes/nepal-codes-website.git"
+  "dependencies": {
+    "@mdi/font": "^3.3.92",
+    "roboto-fontface": "*",
+    "vue": "^2.5.21",
+    "vuetify": "^2.0.0-alpha.2",
+    "vuex": "^3.0.1"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nepal-codes/nepal-codes-website/issues"
-  },
-  "homepage": "https://github.com/nepal-codes/nepal-codes-website#readme",
   "devDependencies": {
-    "http-server": "^0.11.1"
-  }
+    "@vue/cli-plugin-babel": "^3.3.0",
+    "@vue/cli-plugin-eslint": "^3.3.0",
+    "@vue/cli-service": "^3.3.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vue-cli-plugin-vuetify": "^0.4.6",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/recommended",
+      "@vue/standard"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }
