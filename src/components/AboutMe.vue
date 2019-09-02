@@ -17,9 +17,8 @@
         </base-heading>
 
         <base-text class="mb-5">
-          Lorem ipsum dolor sit amet, consectetur adipi<br>
-          scin elit. Etiam vulputate augue vel felis gravida<br>
-          porta. Lorem ipsum dolor sit amet.
+          Nepal codes is a community for students, professionals and specialists in software development and technology. we collaborate with different institutions to empower nepalese with innovations in technology.<br />
+Nepal codes is a not-for-profit, inclusive organization we welcome all including youth, women and minorities in technology to participate in meetups, workshops and projects. please join us!.
         </base-text>
 
         <base-subheading class="info--text">
