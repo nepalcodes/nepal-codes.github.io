@@ -1,6 +1,10 @@
-# Freelancer Theme for Vuetify
+[![Netlify Status](https://api.netlify.com/api/v1/badges/56c72af2-8bf5-4cd3-842e-216885a5e989/deploy-status)](https://app.netlify.com/sites/nepalcodes/deploys)
 
-## Project setup
+# Nepal Codes
+
+## Development
+
+### Project setup
 ```
 yarn install
 ```
