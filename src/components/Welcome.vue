@@ -19,16 +19,10 @@
           <v-flex xs10 md6>
             <base-heading>Nepal Codes</base-heading>
             <base-text>
-              Lorem ipsum dolor sit amet, consectetur ad
-              ipiscin elit. Etiam vulputate augue vel felis gra
-              vida porta. Lorem ipsum dolor sit amet, cons
-              ectetur adipiscing elit.
-              <br />Lorem ipsum dolor sit amet, consectetur ad
-              ipiscin elit. Etiam vulputate augue vel felis gra
-              vida porta. Lorem ipsum dolor sit amet, cons
-              ectetur adipiscing elit.
+              Nepal codes is a community for students, professionals and specialists in software development and technology. we collaborate with different institutions to empower nepalese with innovations in technology.<br />
+Nepal codes is a not-for-profit, inclusive organization we welcome all including youth, women and minorities in technology to participate in meetups, workshops and projects. please join us!.
             </base-text>
-            <base-btn class="mt-4">Learn More!</base-btn>
+            <!-- <base-btn href="" class="mt-4">Learn More!</base-btn> -->
           </v-flex>
         </v-layout>
 
