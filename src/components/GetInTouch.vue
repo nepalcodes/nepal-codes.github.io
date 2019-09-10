@@ -12,7 +12,7 @@
           <v-form
             ref="form"
             method="post"
-            action="https://yahoo.us3.list-manage.com/subscribe/post?u=faa30208f90d7892be89f58b9&amp;id=e15ebf4807"
+            action="https://gmail.us4.list-manage.com/subscribe/post?u=6429aaeccb0a0afdc33847559&amp;id=0f86a0ffaa"
           >
             <v-layout white--text>
               <v-flex>
@@ -57,7 +57,7 @@
 </template>
 
 <script>
-const axios = require("axios");
+//const axios = require("axios");
 export default {
   data: () => ({
     valid: false,
