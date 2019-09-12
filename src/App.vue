@@ -11,9 +11,9 @@
 <script>
 export default {
   components: {
-    CoreFooter: () => import('@/components/core/Footer'),
-    CoreToolbar: () => import('@/components/core/Toolbar'),
-    CoreView: () => import('@/components/core/View')
+    CoreFooter: () => import("@/components/core/Footer"),
+    CoreToolbar: () => import("@/components/core/Toolbar"),
+    CoreView: () => import("@/components/core/View"),
   }
-}
+};
 </script>
