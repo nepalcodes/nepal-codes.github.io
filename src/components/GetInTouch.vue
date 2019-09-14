@@ -46,7 +46,7 @@
                   solo
                   flat
                 />
-                <v-btn type="submit">Send</v-btn>
+                <v-btn type="submit">Join Us</v-btn>
               </v-flex>
             </v-layout>
           </v-form>
