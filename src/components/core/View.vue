@@ -1,8 +1,8 @@
 <template>
   <div>
     <welcome />
-    <recent-projects />
-    <mission />
+    <!-- <recent-projects />
+    <mission /> -->
     <about-me />
     <get-in-touch />
   </div>
