@@ -37,8 +37,11 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Commit your code
 1. Make sure to check out the staging branch
-2. Commit all of your code
-3. Push it to github
-4. Create a pull request
-5. Test it at Staging.nepalcodes.netlify.com
-6. Once its been approved, merge it to master in github
+2. Make your changes
+3. Run your tests (check above on how)
+4. Run lint (check above on how)
+5. Commit all of your code
+6. Push it to github
+7. Create a pull request
+8. Test it at Staging.nepalcodes.netlify.com
+9. Once its been approved, merge it to master in github
