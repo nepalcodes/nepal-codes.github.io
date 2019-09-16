@@ -4,6 +4,9 @@
 
 ## Development
 
+### Install Yarn
+https://yarnpkg.com/en/docs/cli/run
+
 ### Project setup
 ```
 yarn install
@@ -31,3 +34,11 @@ yarn run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Commit your code
+1. Make sure to check out the staging branch
+2. Commit all of your code
+3. Push it to github
+4. Create a pull request
+5. Test it at Staging.nepalcodes.netlify.com
+6. Once its been approved, merge it to master in github
