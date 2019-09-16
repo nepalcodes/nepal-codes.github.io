@@ -2,7 +2,7 @@
   <section id="get-in-touch" class="hide-overflow">
     <v-layout info white--text>
       <v-flex hidden-sm-and-down md6>
-        <v-img :src="require('@/assets/contact.png')" height="100%" />
+        <v-img src="https://images.unsplash.com/photo-1513614835783-51537729c8ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80" height="100%" />
       </v-flex>
       <v-flex xs12 md6 pa-5>
         <base-bubble-1 />
