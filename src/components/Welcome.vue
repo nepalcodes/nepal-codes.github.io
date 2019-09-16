@@ -2,7 +2,7 @@
   <section id="welcome" class="hide-overflow">
     <v-layout>
       <v-flex hidden-sm-and-down md6>
-        <v-img :src="require('@/assets/welcome.png')" height="100vh" />
+        <v-img :src="require('@/assets/nepalscene.png')" height="100vh" />
       </v-flex>
 
       <v-flex

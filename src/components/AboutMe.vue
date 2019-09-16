@@ -25,7 +25,7 @@
         </v-alert> -->
       </v-flex>
       <v-flex hidden-sm-and-down md6>
-        <v-img :src="require('@/assets/aboutme.png')" height="100%" />
+        <v-img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1233&q=80" height="100%" />
       </v-flex>
     </v-layout>
   </section>
