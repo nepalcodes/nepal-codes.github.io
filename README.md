@@ -36,12 +36,13 @@ yarn run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Commit your code
-1. Make sure to check out the staging branch
-2. Make your changes
-3. Run your tests (check above on how)
-4. Run lint (check above on how)
-5. Commit all of your code
-6. Push it to github
-7. Create a pull request
-8. Test it at Staging.nepalcodes.netlify.com
-9. Once its been approved, merge it to master in github
+1. Make sure you are on the most recent/updated version: ``` git fetch ```
+2. Make sure you are on the staging branch (NOT master!!)
+3. Make your changes
+4. Run your tests: ``` yarn run test ```
+5. Run lint: ``` yarn run lint ```
+6. Commit all your code 
+7. Push it to github: ``` git push ```
+8. Create a pull request (on github) 
+9. Test it at staging.nepalcodes.netlify.com
+10. Once its been approved, merge it to master in github
