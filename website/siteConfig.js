@@ -33,8 +33,6 @@ const siteConfig = {
   projectName: 'nepal-codes',
   organizationName: 'nepalcodes',
   // For top-level user or org sites, the organization is still the same.
-  // e.g., for the https://JoelMarcey.github.io site, it would be set like...
-  //   organizationName: 'JoelMarcey'
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
@@ -53,9 +51,9 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/logo.png',
-  footerIcon: 'img/logo_with_text.png',
-  favicon: 'img/favicon.ico',
+  headerIcon: 'img/logo/inverted.png',
+  footerIcon: 'img/logo/inverted.png',
+  favicon: 'img/logo/favicon.ico',
 
   /* Colors for website */
   colors: {
@@ -74,7 +72,7 @@ const siteConfig = {
       "sans-serif"
     ]
   },
-  
+
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Nepal Codes`,
@@ -88,7 +86,7 @@ const siteConfig = {
   scripts: ['https://buttons.github.io/buttons.js'],
 
   stylesheets: ['https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans&display=swap'],
-  
+
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
   // No .html extensions for paths.
@@ -100,7 +98,7 @@ const siteConfig = {
 
   // For sites with a sizable amount of content, set collapsible to true.
   // Expand/collapse the links and subcategories under categories.
-  // docsSideNavCollapsible: true,
+  docsSideNavCollapsible: true,
 
   // Show documentation's last contributor's name.
   // enableUpdateBy: true,
