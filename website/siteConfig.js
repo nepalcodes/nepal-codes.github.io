@@ -39,13 +39,14 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {page: 'help', label: 'Mission'},
+    {doc: 'Introduction', label: 'Handbook'},
     {doc: 'doc1', label: 'Projects'},
     {blog: true, label: 'Newsletter'},
     {doc: 'doc4', label: 'Join'},
     // Determines search bar position among links
-  { search: true },
-  // Determines language drop down position among links
-  { languages: true }
+    { search: true },
+    // Determines language drop down position among links
+    { languages: true }
   ],
 
   // If you have users set above, you add it here:
@@ -53,7 +54,7 @@ const siteConfig = {
 
   /* path to images for header/footer */
   headerIcon: 'img/logo.png',
-  footerIcon: 'img/logo.png',
+  footerIcon: 'img/logo_with_text.png',
   favicon: 'img/favicon.ico',
 
   /* Colors for website */
@@ -63,15 +64,14 @@ const siteConfig = {
   },
 
   /* Custom fonts for website */
-  
   fonts: {
-    myFont: [
-      "Times New Roman",
-      "Serif"
+    headerFont: [
+      "Montserrat",
+      "sans-serif"
     ],
-    myOtherFont: [
-      "-apple-system",
-      "system-ui"
+    bodyFont: [
+      "Open Sans",
+      "sans-serif"
     ]
   },
   
@@ -87,6 +87,8 @@ const siteConfig = {
   // Add custom scripts here that would be placed in <script> tags.
   scripts: ['https://buttons.github.io/buttons.js'],
 
+  stylesheets: ['https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans&display=swap'],
+  
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
   // No .html extensions for paths.

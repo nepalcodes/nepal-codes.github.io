@@ -4,6 +4,19 @@
     "First Category": ["doc2"],
     "Second Category": ["doc3"]
   },
+  "handbook": {
+    "Getting Started": [
+      "Introduction",
+      "Getting Started",
+      "CodeOfConduct",
+      "Contributing"
+    ],
+    "Guides": [
+      "Templates",
+      "TechSoup",
+      "templates/EmailTemplates"
+    ]
+  },
   "docs-other": {
     "First Category": ["doc4", "doc5"]
   }

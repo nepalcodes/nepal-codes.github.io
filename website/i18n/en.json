@@ -5,6 +5,14 @@
     "previous": "Previous",
     "tagline": "Learn | Code | Innovate",
     "docs": {
+      "CodeOfConduct": {
+        "title": "Code of Conduct",
+        "sidebar_label": "Code of Conduct"
+      },
+      "Contributing": {
+        "title": "Contributing",
+        "sidebar_label": "Contributing"
+      },
       "doc1": {
         "title": "Latin-ish",
         "sidebar_label": "Example Page"
@@ -20,10 +28,29 @@
       },
       "doc5": {
         "title": "Fifth Document"
+      },
+      "GettingStarted": {
+        "title": "Getting Started",
+        "sidebar_label": "Getting Started"
+      },
+      "Introduction": {
+        "title": "Introduction",
+        "sidebar_label": "Introduction"
+      },
+      "TechSoup": {
+        "title": "TechSoup"
+      },
+      "Templates": {
+        "title": "Templates"
+      },
+      "templates/EmailTemplates": {
+        "title": "Email Templates",
+        "sidebar_label": "Email Templates"
       }
     },
     "links": {
       "Mission": "Mission",
+      "Handbook": "Handbook",
       "Projects": "Projects",
       "Newsletter": "Newsletter",
       "Join": "Join"
@@ -31,7 +58,9 @@
     "categories": {
       "Docusaurus": "Docusaurus",
       "First Category": "First Category",
-      "Second Category": "Second Category"
+      "Second Category": "Second Category",
+      "Getting Started": "Getting Started",
+      "Guides": "Guides"
     }
   },
   "pages-strings": {

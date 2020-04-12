@@ -36,10 +36,15 @@ class HomeSplash extends React.Component {
     );
 
     const ProjectTitle = props => (
-      <h2 className="projectTitle">
-        {props.title}
-        <small>{props.tagline}</small>
-      </h2>
+      <React.Fragment>
+        <div className="projectLogo">
+          <img src={`${baseUrl}img/logo/logo.png`} alt="Project Logo" />
+        </div>
+        <h2 className="projectTitle">
+          {props.title}
+          <small>{props.tagline}</small>
+        </h2>
+      </React.Fragment>
     );
 
     const PromoSection = props => (
@@ -60,13 +65,12 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} />
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
+            <Button href="#try">Mission</Button>
+            <Button href={docUrl('doc1.html')}>Projects</Button>
+            <Button href={docUrl('doc2.html')}>Join</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -97,7 +101,7 @@ class Index extends React.Component {
         {[
           {
             content: 'Insert inspiring mission statement',
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            image: `${baseUrl}img/undraw_group_chat.svg`,
             imageAlign: 'left',
             title: 'Nepal Codes',
           },
@@ -116,7 +120,7 @@ class Index extends React.Component {
               + 'technology. Nepal codes is a not-for-profit, inclusive organization'
               + 'we welcome all including youth, women and minorities in technology'
               + 'to participate in meetups, workshops and projects. please join us!.',
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            image: `${baseUrl}img/undraw_pair_programming.svg`,
             imageAlign: 'right',
             title: 'About Us',
           },
@@ -128,8 +132,8 @@ class Index extends React.Component {
       <Block background="light">
         {[
           {
-            content: 'Contact the nepal codes team!',
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            content: 'blah',
+            image: `${baseUrl}img/undraw_real_time_collaboration.svg`,
             imageAlign: 'left',
             title: 'Get In Touch',
           },
