@@ -51,10 +51,10 @@
     },
     "links": {
       "Mission": "Mission",
+      "Projects": "Projects",
       "United Nepali": "United Nepali",
       "Coviders Hackathon": "Coviders Hackathon",
-      "Badges": "Badges",
-      "Code Of Conduct": "Code Of Conduct"
+      "Conduct": "Conduct"
     },
     "categories": {
       "Projects": "Projects"

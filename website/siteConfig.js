@@ -30,7 +30,7 @@ const siteConfig = {
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'nepal-codes',
+  projectName: 'nepalcodes',
   organizationName: 'nepalcodes',
   // For top-level user or org sites, the organization is still the same.
 
