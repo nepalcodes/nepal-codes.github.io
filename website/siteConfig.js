@@ -36,22 +36,23 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {page: 'help', label: 'Mission'},
-    {doc: 'Introduction', label: 'Handbook'},
-    {doc: 'doc1', label: 'Projects'},
-    {blog: true, label: 'Newsletter'},
-    {doc: 'doc4', label: 'Join'},
+    {page: 'mission', label: 'Mission'},
+    // {blog: true, label: 'Newsletter'},
+    {doc: 'projects/NepalCodes', label: 'Projects'},
+    {doc: 'projects/UnitedNepali', label: 'United Nepali'},
+    {doc: 'projects/CovidersHackathon', label: 'Coviders Hackathon'},
+    {doc: 'CodeOfConduct', label: 'Conduct'},
     // Determines search bar position among links
-    { search: true },
+    // { search: true },
     // Determines language drop down position among links
-    { languages: true }
+    // { languages: true }
   ],
 
   // If you have users set above, you add it here:
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/logo/inverted.png',
+  headerIcon: 'img/logo/logo_without_border.png',
   footerIcon: 'img/logo/inverted.png',
   favicon: 'img/logo/favicon.ico',
 
@@ -83,9 +84,14 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js'],
+  scripts: [
+    'https://buttons.github.io/buttons.js',
+    'https://kit.fontawesome.com/029806d9cb.js'
+  ],
 
-  stylesheets: ['https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans&display=swap'],
+  stylesheets: [
+    'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans&display=swap',
+  ],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',

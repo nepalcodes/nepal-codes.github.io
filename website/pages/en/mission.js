@@ -12,7 +12,7 @@ const CompLibrary = require('../../core/CompLibrary.js');
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
-function Help(props) {
+function Mission(props) {
   const {config: siteConfig, language = ''} = props;
   const {baseUrl, docsUrl} = siteConfig;
   const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
@@ -21,18 +21,22 @@ function Help(props) {
 
   const supportLinks = [
     {
-      content: `Learn more using the [documentation on this site.](${docUrl(
-        'doc1.html',
-      )})`,
-      title: 'Browse Docs',
+      content: `We organize activities that enable learning and development for junior software engineers and students`,
+      title: 'Learn',
+      image: `${baseUrl}img/undraw_book_lover.svg`,
+      imageAlign: "bottom"
     },
     {
-      content: 'Ask questions about the documentation and project',
-      title: 'Join the community',
+      content: 'We build software programming projects and applications for the Nepalese community',
+      title: 'Code',
+      image: `${baseUrl}img/undraw_developer_activity.svg`,
+      imageAlign: "bottom"
     },
     {
-      content: "Find out what's new with this project",
-      title: 'Stay up to date',
+      content: "We use our creative energy and innovation to make a positive impact in our world",
+      title: 'Innovate',
+      image: `${baseUrl}img/undraw_new_ideas.svg`,
+      imageAlign: "bottom"
     },
   ];
 
@@ -41,9 +45,9 @@ function Help(props) {
       <Container className="mainContainer documentContainer postContainer">
         <div className="post">
           <header className="postHeader">
-            <h1>Need help?</h1>
+            <h1>Mission</h1>
           </header>
-          <p>This project is maintained by a dedicated group of people.</p>
+          <p>Our mission is to Learn, Code, and Innovate to make a positive impact on Nepalese worldwide.</p>
           <GridBlock contents={supportLinks} layout="threeColumn" />
         </div>
       </Container>
@@ -51,4 +55,4 @@ function Help(props) {
   );
 }
 
-module.exports = Help;
+module.exports = Mission;

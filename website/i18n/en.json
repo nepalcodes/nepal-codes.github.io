@@ -13,22 +13,6 @@
         "title": "Contributing",
         "sidebar_label": "Contributing"
       },
-      "doc1": {
-        "title": "Latin-ish",
-        "sidebar_label": "Example Page"
-      },
-      "doc2": {
-        "title": "document number 2"
-      },
-      "doc3": {
-        "title": "This is document number 3"
-      },
-      "doc4": {
-        "title": "Other Document"
-      },
-      "doc5": {
-        "title": "Fifth Document"
-      },
       "GettingStarted": {
         "title": "Getting Started",
         "sidebar_label": "Getting Started"
@@ -37,8 +21,21 @@
         "title": "Introduction",
         "sidebar_label": "Introduction"
       },
-      "TechSoup": {
-        "title": "TechSoup"
+      "projects/Badges": {
+        "title": "Badges",
+        "sidebar_label": "Badges"
+      },
+      "projects/CovidersHackathon": {
+        "title": "Coviders Hackathon",
+        "sidebar_label": "Coviders Hackathon"
+      },
+      "projects/NepalCodes": {
+        "title": "Nepal Codes",
+        "sidebar_label": "Nepal Codes Website"
+      },
+      "projects/UnitedNepali": {
+        "title": "United Nepali",
+        "sidebar_label": "United Nepali"
       },
       "Templates": {
         "title": "Templates"
@@ -46,21 +43,21 @@
       "templates/EmailTemplates": {
         "title": "Email Templates",
         "sidebar_label": "Email Templates"
+      },
+      "templates/ProjectDocumentation": {
+        "title": "Project Documentation",
+        "sidebar_label": "Project Documention"
       }
     },
     "links": {
       "Mission": "Mission",
-      "Handbook": "Handbook",
-      "Projects": "Projects",
-      "Newsletter": "Newsletter",
-      "Join": "Join"
+      "United Nepali": "United Nepali",
+      "Coviders Hackathon": "Coviders Hackathon",
+      "Badges": "Badges",
+      "Code Of Conduct": "Code Of Conduct"
     },
     "categories": {
-      "Docusaurus": "Docusaurus",
-      "First Category": "First Category",
-      "Second Category": "Second Category",
-      "Getting Started": "Getting Started",
-      "Guides": "Guides"
+      "Projects": "Projects"
     }
   },
   "pages-strings": {

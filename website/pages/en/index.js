@@ -61,9 +61,11 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
-            <Button href="#try">Mission</Button>
-            <Button href={docUrl("doc1.html")}>Projects</Button>
-            <Button href={docUrl("doc2.html")}>Join</Button>
+            <Button href={"https://github.com/nepalcodes"}><i class="fab fa-github"></i> Github</Button>
+            <Button href={"https://join.slack.com/t/nepalcodes/shared_invite/enQtNjYzMjE5MjY3MDI4LWI5NWEyNDljZDgzNzExOWQ0NjRhNDU4NDdmZGYzNmE1MDM4NDA3NjRmMWNkZDljMWU1NDhlMjk0NGZmMTU4MjQ"}><i class="fab fa-slack"></i> Slack</Button>
+            <Button href="https://www.facebook.com/groups/892067427822061/"><i class="fab fa-facebook"></i> Facebook</Button>
+            <Button href={"https://www.linkedin.com/company/nepalcodes/"}><i class="fab fa-linkedin"></i> LinkedIn</Button>
+            {/* <Button href={"mailto:team@nepalcodes.com"}><i class="far fa-envelope"></i> Email</Button> */}
           </PromoSection>
         </div>
       </SplashContainer>
@@ -79,6 +81,13 @@ class Index extends React.Component {
     const SubscriptionForm = () => {
       return (
         <React.Fragment>
+          <div>
+            {`Join us online on: `}
+            <a href="https://www.facebook.com/groups/892067427822061/">Facebook</a>{`, `}
+            <a href="https://github.com/nepalcodes">Github</a>{`, `}
+            <a href="https://join.slack.com/t/nepalcodes/shared_invite/enQtNjYzMjE5MjY3MDI4LWI5NWEyNDljZDgzNzExOWQ0NjRhNDU4NDdmZGYzNmE1MDM4NDA3NjRmMWNkZDljMWU1NDhlMjk0NGZmMTU4MjQ">Slack</a>
+            {`. Register as a member here! `}
+          </div>
           <link
             href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
             rel="stylesheet"
@@ -92,10 +101,9 @@ class Index extends React.Component {
               name="mc-embedded-subscribe-form"
               class="validate"
               target="_blank"
-              novalidate
+              noValidate
             >
               <div id="mc_embed_signup_scroll">
-                <h2>Subscribe</h2>
                 <div class="indicates-required">
                   <span class="asterisk">*</span> indicates required
                 </div>
@@ -157,10 +165,10 @@ class Index extends React.Component {
                     value=""
                   />
                 </div>
-                <div class="clear">
+                <div class="clear pluginWrapper buttonWrapper">
                   <input
                     type="submit"
-                    value="Subscribe"
+                    value="Join"
                     name="subscribe"
                     id="mc-embedded-subscribe"
                     class="button"
@@ -177,68 +185,6 @@ class Index extends React.Component {
             {`(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);`}
           </script>
         </React.Fragment>
-      );
-      const [first, setFirst] = React.useState();
-      const [last, setLast] = React.useState();
-      const [email, setEmail] = React.useState();
-      // 'Content-Type': 'application/x-www-form-urlencoded',
-
-      const onSubmit = () => {
-        console.log("onSubmit");
-        const url =
-          "https://nepalcodes.us4.list-manage.com/subscribe/post?u=6429aaeccb0a0afdc33847559&amp;id=0f86a0ffaa";
-        fetch(url, {
-          method: "POST",
-          body: JSON.stringify({
-            EMAIL: email,
-            LNAME: last,
-            FNAME: first,
-          }),
-        }).then((response) => {
-          console.log(response);
-        });
-      };
-
-      return (
-        <div>
-          <label>
-            First Name:
-            <input
-              type="text"
-              value={first}
-              onChange={(event) => {
-                setFirst(event.target.value);
-              }}
-            />
-          </label>
-          <label>
-            Last Name:
-            <input
-              type="text"
-              value={last}
-              onChange={(event) => {
-                setLast(event.target.value);
-              }}
-            />
-          </label>
-          <label>
-            Email:
-            <input
-              type="email"
-              value={email}
-              onChange={(event) => {
-                setEmail(event.target.value);
-              }}
-            />
-          </label>
-          <button
-            onClick={() => {
-              console.log("hi button");
-            }}
-          >
-            Submit
-          </button>
-        </div>
       );
     };
 
@@ -260,10 +206,16 @@ class Index extends React.Component {
       <Block background="light">
         {[
           {
-            content: "Insert inspiring mission statement",
+            content:
+              "Our mission is to **Learn**, **Code**, and **Innovate** to "
+              + "make a positive impact on Nepalese worldwide. We learn "
+              + "and teach through mentorship programs and hands on experience. "
+              + "We code by building real world software applications such as "
+              + "our current project United Nepali. We drive innovatation in "
+              + "our communities through projects like the Coviders Hackathon.",
             image: `${baseUrl}img/undraw_group_chat.svg`,
-            imageAlign: "left",
-            title: "Nepal Codes",
+            imageAlign: "right",
+            title: "Our Mission",
           },
         ]}
       </Block>
@@ -274,22 +226,17 @@ class Index extends React.Component {
         {[
           {
             content:
-              "Nepal codes is a community for students, professionals and" +
-              "specialists in software development and technology. we collaborate" +
-              "with different institutions to empower nepalese with innovations in" +
-              "technology. Nepal codes is a not-for-profit, inclusive organization" +
-              "we welcome all including youth, women and minorities in technology" +
-              "to participate in meetups, workshops and projects. please join us!.",
+              "Welcome to Nepal Codes! We are a community for students, professionals and specialists in software development and technology. We collaborate with different institutions to empower Nepalese worldwide with innovations in technology. Nepal codes is a not-for-profit, inclusive organization. We welcome anyone interested to participate in meetups, workshops and projects.",
             image: `${baseUrl}img/undraw_pair_programming.svg`,
-            imageAlign: "right",
-            title: "About Us",
+            imageAlign: "left",
+            title: "Namaste",
           },
         ]}
       </Block>
     );
 
     const GetInTouch = () => (
-      <Block background="light">
+      <Block>
         {[
           {
             content: ReactDOMServer.renderToString(<SubscriptionForm />),
@@ -301,44 +248,13 @@ class Index extends React.Component {
       </Block>
     );
 
-    const Showcase = () => {
-      if ((siteConfig.users || []).length === 0) {
-        return null;
-      }
-
-      const showcase = siteConfig.users
-        .filter((user) => user.pinned)
-        .map((user) => (
-          <a href={user.infoLink} key={user.infoLink}>
-            <img src={user.image} alt={user.caption} title={user.caption} />
-          </a>
-        ));
-
-      const pageUrl = (page) =>
-        baseUrl + (language ? `${language}/` : "") + page;
-
-      return (
-        <div className="productShowcaseSection paddingBottom">
-          <h2>Who is Using This?</h2>
-          <p>This project is used by all these people</p>
-          <div className="logos">{showcase}</div>
-          <div className="more-users">
-            <a className="button" href={pageUrl("users.html")}>
-              More {siteConfig.title} Users
-            </a>
-          </div>
-        </div>
-      );
-    };
-
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          <MissionStatement />
           <AboutUs />
+          <MissionStatement />
           <GetInTouch />
-          <Showcase />
         </div>
       </div>
     );
