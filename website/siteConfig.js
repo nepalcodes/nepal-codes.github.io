@@ -89,6 +89,8 @@ const siteConfig = {
     'https://kit.fontawesome.com/029806d9cb.js'
   ],
 
+  gaTrackingId: 'https://www.googletagmanager.com/gtag/js?id=UA-163353142-1',
+
   stylesheets: [
     'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans&display=swap',
   ],
