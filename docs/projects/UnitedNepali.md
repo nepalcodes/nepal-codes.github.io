@@ -22,3 +22,13 @@ United Nepali aims to be the go-to site to find Nepali Communities in your area.
 ## Currently Looking For
 * Software Developers
 * UX Designers
+
+## Mockups
+<div style="display: flex; flex-wrap: wrap">
+    <img src="/img/united-nepali/mockup-1.png" width="250">
+    <img src="/img/united-nepali/mockup-2.png" width="250">
+    <img src="/img/united-nepali/mockup-3.png" width="250">
+    <img src="/img/united-nepali/mockup-4.png" width="250">
+    <img src="/img/united-nepali/mockup-5.png" width="250">
+    <img src="/img/united-nepali/mockup-6.png" width="250">
+</div>

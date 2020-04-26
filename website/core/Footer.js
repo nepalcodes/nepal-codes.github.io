@@ -61,9 +61,9 @@ class Footer extends React.Component {
 
 module.exports = Footer;
 
-{/* <i aria-hidden="true" class="v-icon mdi mdi-twitter theme--dark"></i>
-<i aria-hidden="true" class="v-icon mdi mdi-github-circle theme--dark"></i>
-<i aria-hidden="true" class="v-icon mdi mdi-facebook theme--dark"></i>
-<i aria-hidden="true" class="v-icon mdi mdi-slack theme--dark"></i>
-<i aria-hidden="true" class="v-icon mdi mdi-email theme--dark"> </i>
-<i aria-hidden="true" class="v-icon mdi mdi-phone theme--dark"></i> */}
+{/* <i aria-hidden="true" className="v-icon mdi mdi-twitter theme--dark"></i>
+<i aria-hidden="true" className="v-icon mdi mdi-github-circle theme--dark"></i>
+<i aria-hidden="true" className="v-icon mdi mdi-facebook theme--dark"></i>
+<i aria-hidden="true" className="v-icon mdi mdi-slack theme--dark"></i>
+<i aria-hidden="true" className="v-icon mdi mdi-email theme--dark"> </i>
+<i aria-hidden="true" className="v-icon mdi mdi-phone theme--dark"></i> */}

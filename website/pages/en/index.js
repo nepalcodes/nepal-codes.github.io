@@ -61,11 +61,11 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
-            <Button href={"https://github.com/nepalcodes"}><i class="fab fa-github"></i> Github</Button>
-            <Button href={"https://join.slack.com/t/nepalcodes/shared_invite/enQtNjYzMjE5MjY3MDI4LWI5NWEyNDljZDgzNzExOWQ0NjRhNDU4NDdmZGYzNmE1MDM4NDA3NjRmMWNkZDljMWU1NDhlMjk0NGZmMTU4MjQ"}><i class="fab fa-slack"></i> Slack</Button>
-            <Button href="https://www.facebook.com/groups/892067427822061/"><i class="fab fa-facebook"></i> Facebook</Button>
-            <Button href={"https://www.linkedin.com/company/nepalcodes/"}><i class="fab fa-linkedin"></i> LinkedIn</Button>
-            {/* <Button href={"mailto:team@nepalcodes.com"}><i class="far fa-envelope"></i> Email</Button> */}
+            <Button href={"https://github.com/nepalcodes"}><i className="fab fa-github"></i> Github</Button>
+            <Button href={"https://join.slack.com/t/nepalcodes/shared_invite/enQtNjYzMjE5MjY3MDI4LWI5NWEyNDljZDgzNzExOWQ0NjRhNDU4NDdmZGYzNmE1MDM4NDA3NjRmMWNkZDljMWU1NDhlMjk0NGZmMTU4MjQ"}><i className="fab fa-slack"></i> Slack</Button>
+            <Button href="https://www.facebook.com/groups/892067427822061/"><i className="fab fa-facebook"></i> Facebook</Button>
+            <Button href={"https://www.linkedin.com/company/nepalcodes/"}><i className="fab fa-linkedin"></i> LinkedIn</Button>
+            {/* <Button href={"mailto:team@nepalcodes.com"}><i className="far fa-envelope"></i> Email</Button> */}
           </PromoSection>
         </div>
       </SplashContainer>
@@ -99,57 +99,57 @@ class Index extends React.Component {
               method="post"
               id="mc-embedded-subscribe-form"
               name="mc-embedded-subscribe-form"
-              class="validate"
+              className="validate"
               target="_blank"
               noValidate
             >
               <div id="mc_embed_signup_scroll">
-                <div class="indicates-required">
-                  <span class="asterisk">*</span> indicates required
+                <div className="indicates-required">
+                  <span className="asterisk">*</span> indicates required
                 </div>
-                <div class="mc-field-group">
-                  <label for="mce-EMAIL">
-                    Email Address <span class="asterisk">*</span>
+                <div className="mc-field-group">
+                  <label htmlFor="mce-EMAIL">
+                    Email Address <span className="asterisk">*</span>
                   </label>
                   <input
                     type="email"
-                    value=""
+                    defaultValue=""
                     name="EMAIL"
-                    class="required email"
+                    className="required email"
                     id="mce-EMAIL"
                   />
                 </div>
-                <div class="mc-field-group">
-                  <label for="mce-FNAME">
-                    First Name <span class="asterisk">*</span>
+                <div className="mc-field-group">
+                  <label htmlFor="mce-FNAME">
+                    First Name <span className="asterisk">*</span>
                   </label>
                   <input
                     type="text"
-                    value=""
+                    defaultValue=""
                     name="FNAME"
-                    class="required"
+                    className="required"
                     id="mce-FNAME"
                   />
                 </div>
-                <div class="mc-field-group">
-                  <label for="mce-LNAME">
-                    Last Name <span class="asterisk">*</span>
+                <div className="mc-field-group">
+                  <label htmlFor="mce-LNAME">
+                    Last Name <span className="asterisk">*</span>
                   </label>
                   <input
                     type="text"
-                    value=""
+                    defaultValue=""
                     name="LNAME"
-                    class="required"
+                    className="required"
                     id="mce-LNAME"
                   />
                 </div>
-                <div id="mce-responses" class="clear">
+                <div id="mce-responses" className="clear">
                   <div
-                    class="response"
+                    className="response"
                     id="mce-error-response"
                   ></div>
                   <div
-                    class="response"
+                    className="response"
                     id="mce-success-response"
                     style={{display: "none"}}
                   ></div>
@@ -161,17 +161,17 @@ class Index extends React.Component {
                   <input
                     type="text"
                     name="b_6429aaeccb0a0afdc33847559_0f86a0ffaa"
-                    tabindex="-1"
-                    value=""
+                    tabIndex="-1"
+                    defaultValue=""
                   />
                 </div>
-                <div class="clear pluginWrapper buttonWrapper">
+                <div className="clear pluginWrapper buttonWrapper">
                   <input
                     type="submit"
-                    value="Join"
+                    defaultValue="Join"
                     name="subscribe"
                     id="mc-embedded-subscribe"
-                    class="button"
+                    className="button"
                   />
                 </div>
               </div>
