@@ -12,7 +12,7 @@ sidebar_label: United Nepali
 > **mockups** https://app.moqups.com/1WG7zuOlri/view
 
 ## Description
-United Nepali aims to be the go-to site to find Nepali Communities in your area. With hundreds of different communities which use various ways to spread information about events like meetup, eventbrite, community websites, email lists, etc. United Nepali will be the one place you can find everything.
+United Nepali aims to be the go-to site to find Nepali Communities in your area. With hundreds of different communities which use various ways to spread information about events like meetup, eventbrite, community websites, email lists, etc. United Nepali will be the one place you can find everything. This a completely volunteer run project.
 
 ## Tech Stack
 * React
@@ -34,3 +34,6 @@ Checkout the Mockups for our project [here](https://app.moqups.com/1WG7zuOlri/vi
     <img src="/img/united-nepali/mockup-5.png" width="250">
     <img src="/img/united-nepali/mockup-6.png" width="250">
 </div>
+
+## Brand
+<img src="/img/united-nepali/brand.png" width="100%">
