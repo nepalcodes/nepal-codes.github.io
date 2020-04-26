@@ -25,16 +25,21 @@ class Footer extends React.Component {
     return (
       <footer className="nav-footer" id="footer">
         <section className="sitemap">
-          <a href={this.props.config.baseUrl} className="nav-home">
-            {this.props.config.footerIcon && (
-              <img
-                src={this.props.config.baseUrl + this.props.config.footerIcon}
-                alt={this.props.config.title}
-                width="66"
-                height="58"
-              />
-            )}
-          </a>
+          <div>
+            <a href={this.props.config.baseUrl} className="nav-home">
+              {this.props.config.footerIcon && (
+                <img
+                  src={this.props.config.baseUrl + this.props.config.footerIcon}
+                  alt={this.props.config.title}
+                  width="66"
+                  height="58"
+                />
+              )}
+            </a>
+            <a href="https://www.netlify.com" className="nav-home">
+              <img src="https://www.netlify.com/img/global/badges/netlify-dark.svg" alt="Deploys by Netlify" />
+            </a>
+          </div>
           <div>
             <h5>Follow!</h5>
             <a href="https://www.facebook.com/Nepal-Codes-102647171232011/">Facebook Page</a>
