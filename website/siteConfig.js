@@ -40,7 +40,6 @@ const siteConfig = {
     // {blog: true, label: 'Newsletter'},
     {doc: 'projects/NepalCodes', label: 'Projects'},
     {doc: 'projects/UnitedNepali', label: 'United Nepali'},
-    {doc: 'projects/CovidersHackathon', label: 'Coviders Hackathon'},
     {doc: 'CodeOfConduct', label: 'Conduct'},
     // Determines search bar position among links
     // { search: true },

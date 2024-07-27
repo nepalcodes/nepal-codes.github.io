@@ -25,10 +25,6 @@
         "title": "Badges",
         "sidebar_label": "Badges"
       },
-      "projects/CovidersHackathon": {
-        "title": "Coviders Hackathon",
-        "sidebar_label": "Coviders Hackathon"
-      },
       "projects/NepalCodes": {
         "title": "Nepal Codes",
         "sidebar_label": "Nepal Codes Website"
@@ -53,7 +49,6 @@
       "Mission": "Mission",
       "Projects": "Projects",
       "United Nepali": "United Nepali",
-      "Coviders Hackathon": "Coviders Hackathon",
       "Conduct": "Conduct"
     },
     "categories": {

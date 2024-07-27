@@ -211,8 +211,7 @@ class Index extends React.Component {
               + "make a positive impact on Nepalese worldwide. We learn "
               + "and teach through mentorship programs and hands on experience. "
               + "We code by building real world software applications such as "
-              + "our current project United Nepali. We drive innovatation in "
-              + "our communities through projects like the Coviders Hackathon.",
+              + "our current project United Nepali.",
             image: `${baseUrl}img/undraw_group_chat.svg`,
             imageAlign: "right",
             title: "Our Mission",
