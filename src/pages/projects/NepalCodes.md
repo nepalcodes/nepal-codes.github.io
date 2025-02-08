@@ -13,10 +13,6 @@ The Nepal Codes Website functions to inform vistors about the mission of the Nep
 
 ## Tech Stack
 
-- React
-- Docusaurus
+- Astro
+- React (for legacy docusaurus index page)
 - Markdown files
-
-## Currently Looking For
-
-- English to Nepali Translators (for this site)
