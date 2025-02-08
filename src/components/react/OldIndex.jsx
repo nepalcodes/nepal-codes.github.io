@@ -52,12 +52,8 @@ class HomeSplash extends React.Component {
             <Button href={"https://github.com/nepalcodes"}>
               <i className="fab fa-github"></i> Github
             </Button>
-            <Button
-              href={
-                "https://join.slack.com/t/nepalcodes/shared_invite/enQtNjYzMjE5MjY3MDI4LWI5NWEyNDljZDgzNzExOWQ0NjRhNDU4NDdmZGYzNmE1MDM4NDA3NjRmMWNkZDljMWU1NDhlMjk0NGZmMTU4MjQ"
-              }
-            >
-              <i className="fab fa-slack"></i> Slack
+            <Button href={"https://discord.gg/xDCGAu2X2s"}>
+              <i className="fab fa-discord"></i> Discord
             </Button>
             <Button href="https://www.facebook.com/groups/892067427822061/">
               <i className="fab fa-facebook"></i> Facebook

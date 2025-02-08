@@ -3,7 +3,7 @@ layout: ../../layouts/ContentPage.astro
 title: Nepal Codes
 ---
 
-> **slack channel:** [#proj-nepalcodes](https://nepalcodes.slack.com/archives/CST2R50UA) \
+> **discord:** [#nepalcodes-website](https://discord.com/channels/1266571200948207690/1337064541942579311) \
 > **github:** https://github.com/nepalcodes/nepal-codes.github.io
 
 ## Description

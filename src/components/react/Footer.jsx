@@ -21,12 +21,6 @@ export default class Footer extends React.Component {
                 />
               )}
             </a>
-            <a href="https://www.netlify.com" className="nav-home">
-              <img
-                src="https://www.netlify.com/img/global/badges/netlify-dark.svg"
-                alt="Deploys by Netlify"
-              />
-            </a>
           </div>
           <div>
             <h5>Follow!</h5>
@@ -42,9 +36,7 @@ export default class Footer extends React.Component {
               Facebook Group
             </a>
             <a href="https://github.com/nepalcodes">Github</a>
-            <a href="https://join.slack.com/t/nepalcodes/shared_invite/enQtNjYzMjE5MjY3MDI4LWI5NWEyNDljZDgzNzExOWQ0NjRhNDU4NDdmZGYzNmE1MDM4NDA3NjRmMWNkZDljMWU1NDhlMjk0NGZmMTU4MjQ">
-              Slack
-            </a>
+            <a href="https://discord.gg/xDCGAu2X2s">Discord</a>
           </div>
           <div>
             <h5>Connect!</h5>
