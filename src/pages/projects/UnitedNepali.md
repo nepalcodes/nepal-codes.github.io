@@ -10,7 +10,6 @@ sidebar_label: United Nepali
 > **website:** www.unitednepali.com \
 > **discord channel:** [#united-nepali](https://discord.com/channels/1266571200948207690/1337064681319170099) \
 > **github:** https://github.com/nepalcodes/unitednepali/ \
-> **github project:** https://github.com/nepalcodes/unitednepali/projects/1 \
 > **github issues:** https://github.com/nepalcodes/unitednepali/issues \
 > **mockups** https://app.moqups.com/1WG7zuOlri/view
 
