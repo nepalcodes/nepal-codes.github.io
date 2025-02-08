@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOMServer from "react-dom/server";
 
 class HomeSplash extends React.Component {
   render() {
@@ -194,7 +193,6 @@ export default class Index extends React.Component {
     const Block = (props) => (
       <div
         style={{
-          padding: ["bottom", "top"],
           id: props.id,
           background: props.background,
         }}
@@ -219,7 +217,7 @@ export default class Index extends React.Component {
     );
 
     const MissionStatement = () => (
-      <Block background="light">
+      <Block background="#f7f7f7">
         {{
           content: (
             <p>
