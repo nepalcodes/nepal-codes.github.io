@@ -1,6 +1,7 @@
 ---
+layout: ../layouts/ContentPage.astro
 id: CodeOfConduct
-title: Code of Conduct
+title: "Code of Conduct"
 sidebar_label: Code of Conduct
 ---
 
