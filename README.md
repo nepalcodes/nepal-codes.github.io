@@ -70,4 +70,3 @@ pnpm install
 ## Credits
 
 https://github.com/nepalcodes/nepal-codes.github.io/graphs/contributors
-

@@ -11,36 +11,36 @@
 // List of projects/orgs using your project for the users page.
 const users = [
   {
-    caption: 'User1',
+    caption: "User1",
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
+    image: "/img/undraw_open_source.svg",
+    infoLink: "https://www.facebook.com",
     pinned: true,
   },
 ];
 
 const siteConfig = {
-  title: 'Nepal Codes', // Title for your website.
-  tagline: 'Learn | Code | Innovate',
-  url: 'www.nepalcodes.com', // Your website URL
-  baseUrl: '/', // Base URL for your project */
+  title: "Nepal Codes", // Title for your website.
+  tagline: "Learn | Code | Innovate",
+  url: "www.nepalcodes.com", // Your website URL
+  baseUrl: "/", // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'nepalcodes',
-  organizationName: 'nepalcodes',
+  projectName: "nepalcodes",
+  organizationName: "nepalcodes",
   // For top-level user or org sites, the organization is still the same.
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {page: 'mission', label: 'Mission'},
+    { page: "mission", label: "Mission" },
     // {blog: true, label: 'Newsletter'},
-    {doc: 'projects/NepalCodes', label: 'Projects'},
-    {doc: 'projects/UnitedNepali', label: 'United Nepali'},
-    {doc: 'CodeOfConduct', label: 'Conduct'},
+    { doc: "projects/NepalCodes", label: "Projects" },
+    { doc: "projects/UnitedNepali", label: "United Nepali" },
+    { doc: "CodeOfConduct", label: "Conduct" },
     // Determines search bar position among links
     // { search: true },
     // Determines language drop down position among links
@@ -51,57 +51,50 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/logo/logo_without_border.png',
-  footerIcon: 'img/logo/inverted.png',
-  favicon: 'img/logo/favicon.ico',
+  headerIcon: "img/logo/logo_without_border.png",
+  footerIcon: "img/logo/inverted.png",
+  favicon: "img/logo/favicon.ico",
 
   /* Colors for website */
   colors: {
-    primaryColor: '#33506d',
-    secondaryColor: '#ff5757',
+    primaryColor: "#33506d",
+    secondaryColor: "#ff5757",
   },
 
   /* Custom fonts for website */
   fonts: {
-    headerFont: [
-      "Montserrat",
-      "sans-serif"
-    ],
-    bodyFont: [
-      "Open Sans",
-      "sans-serif"
-    ]
+    headerFont: ["Montserrat", "sans-serif"],
+    bodyFont: ["Open Sans", "sans-serif"],
   },
-
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Nepal Codes`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
-    theme: 'default',
+    theme: "default",
   },
 
   // Add custom scripts here that would be placed in <script> tags.
   scripts: [
-    'https://buttons.github.io/buttons.js',
-    'https://kit.fontawesome.com/029806d9cb.js'
+    "https://buttons.github.io/buttons.js",
+    "https://kit.fontawesome.com/029806d9cb.js",
   ],
 
-  gaTrackingId: 'https://www.googletagmanager.com/gtag/js?id=UA-163353142-1',
+  gaTrackingId: "https://www.googletagmanager.com/gtag/js?id=UA-163353142-1",
 
   stylesheets: [
-    'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans&display=swap',
+    "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans&display=swap",
   ],
 
   // On page navigation for the current documentation page.
-  onPageNav: 'separate',
+  onPageNav: "separate",
   // No .html extensions for paths.
   cleanUrl: true,
 
   // Open Graph and Twitter card images.
-  ogImage: 'img/undraw_online.svg',
-  twitterImage: 'img/undraw_tweetstorm.svg',
+  ogImage: "img/undraw_online.svg",
+  twitterImage: "img/undraw_tweetstorm.svg",
 
   // For sites with a sizable amount of content, set collapsible to true.
   // Expand/collapse the links and subcategories under categories.

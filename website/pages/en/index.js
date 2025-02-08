@@ -61,10 +61,22 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
-            <Button href={"https://github.com/nepalcodes"}><i className="fab fa-github"></i> Github</Button>
-            <Button href={"https://join.slack.com/t/nepalcodes/shared_invite/enQtNjYzMjE5MjY3MDI4LWI5NWEyNDljZDgzNzExOWQ0NjRhNDU4NDdmZGYzNmE1MDM4NDA3NjRmMWNkZDljMWU1NDhlMjk0NGZmMTU4MjQ"}><i className="fab fa-slack"></i> Slack</Button>
-            <Button href="https://www.facebook.com/groups/892067427822061/"><i className="fab fa-facebook"></i> Facebook</Button>
-            <Button href={"https://www.linkedin.com/company/nepalcodes/"}><i className="fab fa-linkedin"></i> LinkedIn</Button>
+            <Button href={"https://github.com/nepalcodes"}>
+              <i className="fab fa-github"></i> Github
+            </Button>
+            <Button
+              href={
+                "https://join.slack.com/t/nepalcodes/shared_invite/enQtNjYzMjE5MjY3MDI4LWI5NWEyNDljZDgzNzExOWQ0NjRhNDU4NDdmZGYzNmE1MDM4NDA3NjRmMWNkZDljMWU1NDhlMjk0NGZmMTU4MjQ"
+              }
+            >
+              <i className="fab fa-slack"></i> Slack
+            </Button>
+            <Button href="https://www.facebook.com/groups/892067427822061/">
+              <i className="fab fa-facebook"></i> Facebook
+            </Button>
+            <Button href={"https://www.linkedin.com/company/nepalcodes/"}>
+              <i className="fab fa-linkedin"></i> LinkedIn
+            </Button>
             {/* <Button href={"mailto:team@nepalcodes.com"}><i className="far fa-envelope"></i> Email</Button> */}
           </PromoSection>
         </div>
@@ -83,9 +95,15 @@ class Index extends React.Component {
         <React.Fragment>
           <div>
             {`Join us online on: `}
-            <a href="https://www.facebook.com/groups/892067427822061/">Facebook</a>{`, `}
-            <a href="https://github.com/nepalcodes">Github</a>{`, `}
-            <a href="https://join.slack.com/t/nepalcodes/shared_invite/enQtNjYzMjE5MjY3MDI4LWI5NWEyNDljZDgzNzExOWQ0NjRhNDU4NDdmZGYzNmE1MDM4NDA3NjRmMWNkZDljMWU1NDhlMjk0NGZmMTU4MjQ">Slack</a>
+            <a href="https://www.facebook.com/groups/892067427822061/">
+              Facebook
+            </a>
+            {`, `}
+            <a href="https://github.com/nepalcodes">Github</a>
+            {`, `}
+            <a href="https://join.slack.com/t/nepalcodes/shared_invite/enQtNjYzMjE5MjY3MDI4LWI5NWEyNDljZDgzNzExOWQ0NjRhNDU4NDdmZGYzNmE1MDM4NDA3NjRmMWNkZDljMWU1NDhlMjk0NGZmMTU4MjQ">
+              Slack
+            </a>
             {`. Register as a member here! `}
           </div>
           <link
@@ -144,18 +162,15 @@ class Index extends React.Component {
                   />
                 </div>
                 <div id="mce-responses" className="clear">
-                  <div
-                    className="response"
-                    id="mce-error-response"
-                  ></div>
+                  <div className="response" id="mce-error-response"></div>
                   <div
                     className="response"
                     id="mce-success-response"
-                    style={{display: "none"}}
+                    style={{ display: "none" }}
                   ></div>
                 </div>
                 <div
-                  style={{position: "absolute", left: "-5000px"}}
+                  style={{ position: "absolute", left: "-5000px" }}
                   aria-hidden="true"
                 >
                   <input
@@ -207,11 +222,11 @@ class Index extends React.Component {
         {[
           {
             content:
-              "Our mission is to **Learn**, **Code**, and **Innovate** to "
-              + "make a positive impact on Nepalese worldwide. We learn "
-              + "and teach through mentorship programs and hands on experience. "
-              + "We code by building real world software applications such as "
-              + "our current project United Nepali.",
+              "Our mission is to **Learn**, **Code**, and **Innovate** to " +
+              "make a positive impact on Nepalese worldwide. We learn " +
+              "and teach through mentorship programs and hands on experience. " +
+              "We code by building real world software applications such as " +
+              "our current project United Nepali.",
             image: `${baseUrl}img/undraw_group_chat.svg`,
             imageAlign: "right",
             title: "Our Mission",
