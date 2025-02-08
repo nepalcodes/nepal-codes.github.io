@@ -79,7 +79,6 @@ const pathname = Astro.url.pathname;
     display: flex;
     align-items: center;
     height: 50px;
-    padding: 0 1rem;
   }
 
   a {
@@ -88,7 +87,7 @@ const pathname = Astro.url.pathname;
 
   .link {
     text-decoration: none;
-    color: white;
+    color: hsla(0, 0%, 100%, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,6 +96,11 @@ const pathname = Astro.url.pathname;
 
   .link.active {
     text-decoration: underline;
+  }
+
+  .link:hover {
+    color: white;
+    transition: none;
   }
 
   /* TODO: make 750px a variable */
