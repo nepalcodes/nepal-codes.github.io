@@ -1,8 +1,6 @@
 ---
 layout: ../../layouts/ContentPage.astro
-id: UnitedNepali
 title: United Nepali
-sidebar_label: United Nepali
 ---
 
 #### Links

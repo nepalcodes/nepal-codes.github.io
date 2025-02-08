@@ -1,6 +1,5 @@
 ---
 layout: ../../layouts/ContentPage.astro
-id: Nepalingo 
 title: Nepalingo
 ---
 

@@ -1,7 +1,6 @@
 ---
-id: Badges
+layout: ../../layouts/ContentPage.astro
 title: Badges
-sidebar_label: Badges
 ---
 
 > **slack channel:** [#proj-badges](https://nepalcodes.slack.com/archives/C011KKLPJHL)

@@ -1,7 +1,6 @@
 ---
-id: NepalCodes
+layout: ../../layouts/ContentPage.astro
 title: Nepal Codes
-sidebar_label: Nepal Codes Website
 ---
 
 > **slack channel:** [#proj-nepalcodes](https://nepalcodes.slack.com/archives/CST2R50UA) \
