@@ -1,19 +1,8 @@
-const React = require("react");
-const ReactDOMServer = require("react-dom/server");
-
-const CompLibrary = require("../../core/CompLibrary.js");
-const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
-const Container = CompLibrary.Container;
-const GridBlock = CompLibrary.GridBlock;
+import React from "react";
+import ReactDOMServer from "react-dom/server";
 
 class HomeSplash extends React.Component {
   render() {
-    const { siteConfig, language = "" } = this.props;
-    const { baseUrl, docsUrl } = siteConfig;
-    const docsPart = `${docsUrl ? `${docsUrl}/` : ""}`;
-    const langPart = `${language ? `${language}/` : ""}`;
-    const docUrl = (doc) => `${baseUrl}${docsPart}${langPart}${doc}`;
-
     const SplashContainer = (props) => (
       <div className="homeContainer">
         <div className="homeSplashFade">
@@ -31,7 +20,7 @@ class HomeSplash extends React.Component {
     const ProjectTitle = (props) => (
       <React.Fragment>
         <div className="projectLogo">
-          <img src={`${baseUrl}img/logo/logo.png`} alt="Project Logo" />
+          <img src={`/img/logo/logo.png`} alt="Project Logo" />
         </div>
         <h2 className="projectTitle">
           {props.title}
@@ -59,7 +48,7 @@ class HomeSplash extends React.Component {
     return (
       <SplashContainer>
         <div className="inner">
-          <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
+          <ProjectTitle tagline="Learn | Code | Innovate" title="NEPAL CODES" />
           <PromoSection>
             <Button href={"https://github.com/nepalcodes"}>
               <i className="fab fa-github"></i> Github
@@ -85,10 +74,9 @@ class HomeSplash extends React.Component {
   }
 }
 
-class Index extends React.Component {
+export default class Index extends React.Component {
   render() {
     const { config: siteConfig, language = "" } = this.props;
-    const { baseUrl } = siteConfig;
 
     const SubscriptionForm = () => {
       return (
@@ -204,67 +192,77 @@ class Index extends React.Component {
     };
 
     const Block = (props) => (
-      <Container
-        padding={["bottom", "top"]}
-        id={props.id}
-        background={props.background}
+      <div
+        style={{
+          padding: ["bottom", "top"],
+          id: props.id,
+          background: props.background,
+        }}
       >
-        <GridBlock
-          align="center"
-          contents={props.children}
-          layout={props.layout}
-        />
-      </Container>
+        <div
+          style={{
+            display: "flex",
+            flexDirection:
+              props.children.imageAlign === "right" ? "row-reverse" : "row",
+            gap: "4rem",
+            justifyContent: "space-around",
+            padding: "2rem",
+          }}
+        >
+          <img style={{ width: "45%" }} src={props.children.image} />
+          <div>
+            <h2>{props.children.title}</h2>
+            {props.children.content}
+          </div>
+        </div>
+      </div>
     );
 
     const MissionStatement = () => (
       <Block background="light">
-        {[
-          {
-            content:
-              "Our mission is to **Learn**, **Code**, and **Innovate** to " +
-              "make a positive impact on Nepalese worldwide. We learn " +
-              "and teach through mentorship programs and hands on experience. " +
-              "We code by building real world software applications such as " +
-              "our current project United Nepali.",
-            image: `${baseUrl}img/undraw_group_chat.svg`,
-            imageAlign: "right",
-            title: "Our Mission",
-          },
-        ]}
+        {{
+          content: (
+            <p>
+              Our mission is to <b>Learn</b>, <b>Code</b>, and <b>Innovate</b>{" "}
+              to make a positive impact on Nepalese worldwide. We learn and
+              teach through mentorship programs and hands on experience. We code
+              by building real world software applications such as our current
+              project United Nepali.
+            </p>
+          ),
+          image: `/img/undraw_group_chat.svg`,
+          imageAlign: "right",
+          title: "Our Mission",
+        }}
       </Block>
     );
 
     const AboutUs = () => (
       <Block>
-        {[
-          {
-            content:
-              "Welcome to Nepal Codes! We are a community for students, professionals and specialists in software development and technology. We collaborate with different institutions to empower Nepalese worldwide with innovations in technology. Nepal codes is a not-for-profit, inclusive organization. We welcome anyone interested to participate in meetups, workshops and projects.",
-            image: `${baseUrl}img/undraw_pair_programming.svg`,
-            imageAlign: "left",
-            title: "Namaste",
-          },
-        ]}
+        {{
+          content:
+            "Welcome to Nepal Codes! We are a community for students, professionals and specialists in software development and technology. We collaborate with different institutions to empower Nepalese worldwide with innovations in technology. Nepal codes is a not-for-profit, inclusive organization. We welcome anyone interested to participate in meetups, workshops and projects.",
+          image: `/img/undraw_pair_programming.svg`,
+          imageAlign: "left",
+          title: "Namaste",
+        }}
       </Block>
     );
 
     const GetInTouch = () => (
       <Block>
-        {[
-          {
-            content: ReactDOMServer.renderToString(<SubscriptionForm />),
-            image: `${baseUrl}img/undraw_real_time_collaboration.svg`,
-            imageAlign: "left",
-            title: "Get In Touch",
-          },
-        ]}
+        {{
+          content: <SubscriptionForm />,
+          image: `/img/undraw_real_time_collaboration.svg`,
+          imageAlign: "left",
+          title: "Get In Touch",
+        }}
       </Block>
     );
 
     return (
       <div>
-        <HomeSplash siteConfig={siteConfig} language={language} />
+        <HomeSplash />
         <div className="mainContainer">
           <AboutUs />
           <MissionStatement />
@@ -274,5 +272,3 @@ class Index extends React.Component {
     );
   }
 }
-
-module.exports = Index;

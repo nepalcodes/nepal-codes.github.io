@@ -5,32 +5,24 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const React = require("react");
+import * as React from "react";
 
-class Footer extends React.Component {
-  docUrl(doc, language) {
-    const baseUrl = this.props.config.baseUrl;
-    const docsUrl = this.props.config.docsUrl;
-    const docsPart = `${docsUrl ? `${docsUrl}/` : ""}`;
-    const langPart = `${language ? `${language}/` : ""}`;
-    return `${baseUrl}${docsPart}${langPart}${doc}`;
-  }
-
-  pageUrl(doc, language) {
-    const baseUrl = this.props.config.baseUrl;
-    return baseUrl + (language ? `${language}/` : "") + doc;
-  }
-
+export default class Footer extends React.Component {
   render() {
+    const headerIcon = "/img/logo/logo_without_border.png";
+    const footerIcon = "/img/logo/inverted.png";
+    const favicon = "/img/logo/favicon.ico";
+    const copyright = `Copyright © ${new Date().getFullYear()} Nepal Codes`;
+
     return (
       <footer className="nav-footer" id="footer">
         <section className="sitemap">
           <div>
-            <a href={this.props.config.baseUrl} className="nav-home">
-              {this.props.config.footerIcon && (
+            <a href={"/"} className="nav-home">
+              {footerIcon && (
                 <img
-                  src={this.props.config.baseUrl + this.props.config.footerIcon}
-                  alt={this.props.config.title}
+                  src={footerIcon}
+                  alt={"Nepal Codes"}
                   width="66"
                   height="58"
                 />
@@ -67,19 +59,8 @@ class Footer extends React.Component {
           </div>
         </section>
 
-        <section className="copyright">{this.props.config.copyright}</section>
+        <section className="copyright">{copyright}</section>
       </footer>
     );
   }
-}
-
-module.exports = Footer;
-
-{
-  /* <i aria-hidden="true" className="v-icon mdi mdi-twitter theme--dark"></i>
-<i aria-hidden="true" className="v-icon mdi mdi-github-circle theme--dark"></i>
-<i aria-hidden="true" className="v-icon mdi mdi-facebook theme--dark"></i>
-<i aria-hidden="true" className="v-icon mdi mdi-slack theme--dark"></i>
-<i aria-hidden="true" className="v-icon mdi mdi-email theme--dark"> </i>
-<i aria-hidden="true" className="v-icon mdi mdi-phone theme--dark"></i> */
 }
