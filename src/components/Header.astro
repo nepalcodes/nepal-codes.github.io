@@ -1,0 +1,134 @@
+---
+const headerOptions = {
+  Mission: "/Mission",
+  "United Nepali": "/projects/UnitedNepali",
+  Nepalingo: "/projects/Nepalingo",
+  Conduct: "/CodeofConduct",
+};
+
+const { href, class: className, ...props } = Astro.props;
+const pathname = Astro.url.pathname;
+---
+
+<header>
+  <div id="header-wrapper">
+    <a id="logo-wrapper" href="/">
+      <img
+        id="logo"
+        src="/img/logo/logo_without_border.png"
+        alt="Nepal Codes"
+      />
+      <div id="title">NEPAL CODES</div>
+    </a>
+    <div id="link-wrapper">
+      {
+        Object.keys(headerOptions).map((option) => (
+          <a
+            href={headerOptions[option]}
+            class:list={[
+              "link",
+              { active: pathname === headerOptions[option] },
+            ]}
+          >
+            {option}
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</header>
+
+<style>
+  header {
+    color: white;
+    background: #33506d;
+    box-shadow: 0 2px 8px rgba(var(--black), 5%);
+    /* padding: 0 1rem; */
+  }
+
+  #header-wrapper {
+    display: flex;
+    background: #33506d;
+
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  #logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+    padding: 0 1rem;
+  }
+
+  header img {
+    height: 45%;
+    padding-bottom: 5px;
+  }
+
+  #title {
+    letter-spacing: 0.2rem;
+  }
+
+  #link-wrapper {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+
+  a {
+    text-wrap: nowrap;
+  }
+
+  .link {
+    text-decoration: none;
+    color: hsla(0, 0%, 100%, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+
+  .link.active {
+    text-decoration: underline;
+  }
+
+  .link:hover {
+    color: white;
+    transition: none;
+  }
+
+  /* TODO: make 750px a variable */
+  @media only screen and (max-width: 750px) {
+    #header-wrapper {
+      flex-direction: column;
+    }
+
+    #link-wrapper {
+      background: #ff5757;
+      width: 100%;
+    }
+
+    .link.active {
+      background: #2c4c6d;
+      text-decoration: none;
+    }
+
+    .link {
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      transition: background 0.7s;
+    }
+
+    .link:hover {
+      background: #2c4c6d;
+      transition: background 0.3s;
+    }
+  }
+</style>

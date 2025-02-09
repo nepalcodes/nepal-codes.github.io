@@ -1,0 +1,82 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/react/Footer.jsx";
+import Mission from "../components/react/Mission.jsx";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+
+const supportLinks = [
+  {
+    content: `We organize activities that enable learning and development for junior software engineers and students`,
+    title: "Learn",
+    image: `/img/undraw_book_lover.svg`,
+    imageAlign: "bottom",
+  },
+  {
+    content:
+      "We build software programming projects and applications for the Nepalese community",
+    title: "Code",
+    image: `/img/undraw_developer_activity.svg`,
+    imageAlign: "bottom",
+  },
+  {
+    content:
+      "We use our creative energy and innovation to make a positive impact in our world",
+    title: "Innovate",
+    image: `/img/undraw_new_ideas.svg`,
+    imageAlign: "bottom",
+  },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <div style="padding: 0 1rem">
+      <h1>Mission</h1>
+      <p>
+        Our mission is to Learn, Code, and Innovate to make a positive impact on
+        Nepalese worldwide.
+      </p>
+    </div>
+    <div class="support-link-wrapper">
+      {
+        supportLinks.map((link) => (
+          <div class="support-link">
+            <div>
+              <h2>{link.title}</h2>
+              {link.content}
+            </div>
+            <img src={link.image} />
+          </div>
+        ))
+      }
+    </div>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .support-link-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .support-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 400px;
+  }
+  @media only screen and (max-width: 750px) {
+    .support-link-wrapper {
+      flex-wrap: wrap;
+    }
+  }
+</style>
